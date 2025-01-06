@@ -1,0 +1,35 @@
+{
+	"$schema": "manifest_schema.json",
+	"manifest_version": 4,
+	"type": "extension",
+	"name": "TypeScript插件模板",
+	"slug": "plugin_template_ts",
+	"description": "LiteLoaderQQNT 的非官方 TypeScript 插件模板",
+	"version": "0.1.0",
+	"icon": null,
+	"thumb": null,
+	"authors": [
+		{
+			"name": "LateDream",
+			"link": "https://github.com/LateDreamXD"
+		}
+	],
+	"platform": [
+		"win32",
+		"linux",
+		"darwin"
+	],
+	"injects": {
+		"renderer": "./dist/renderer/index.js",
+		"main": "./dist/main/index.js",
+		"preload": "./dist/preload/index.js"
+	},
+	"repository": {
+		"repo": "LateDreamXD/LLQQNT-Plugin-Template-TS",
+		"branch": "main",
+		"release": {
+			"tag": "0.1.0",
+			"file": "Plugin-Template.zip"
+		}
+	}
+}
