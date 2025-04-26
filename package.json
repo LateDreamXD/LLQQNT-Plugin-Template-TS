@@ -1,20 +1,22 @@
 {
   "name": "llqqnt-plugin-template-ts",
+  "type": "module",
   "private": true,
   "author": {
     "name": "LateDream",
-    "email": "latedream_@outlook.com",
+    "email": "latedreamawa@outlook.com",
     "url": "https://github.com/LateDreamXD"
   },
   "scripts": {
-    "build": "npm run build:main && npm run build:renderer",
-    "build:main": "tsc -p ./tsconfig.main.json",
-    "build:renderer": "tsc -p ./tsconfig.renderer.json",
-    "clean": "rm -rf ./dist"
+    "build": "node bin/task-runner.js p",
+    "build:dev": "node bin/task-runner.js d",
+    "build:zip": "node bin/task-runner.js z",
+    "clean": "node bin/task-runner.js c"
   },
   "devDependencies": {
     "@types/electron": "^1.4.38",
     "electron": "^33.3.1",
-    "typescript": "^5.7.2"
+    "jszip": "^3.10.1",
+    "typescript": "^5.8.3"
   }
 }
