@@ -3,13 +3,25 @@
 LiteLoaderQQNT的非官方TypeScript插件模板  
 LiteLoaderQQNT本体：[LiteLoaderQQNT](https://github.com/mo-jinran/LiteLoaderQQNT)
 
-## 如何使用
+## 命令
 ```bash
-# 编译ts文件为js文件
+# 生产环境打包
 npm run build
+pnpm run build
 yarn build
 
-# 清理编译的js文件
+# 开发环境构建
+npm run build:dev
+pnpm run build:dev
+yarn build:dev
+
+# 开发环境构建后手动打包
+npm run build:zip
+pnpm run build:zip
+yarn build:zip
+
+# 清理 dist 目录
 npm run clean
+pnpm run clean
 yarn clean
 ```
