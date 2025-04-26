@@ -1,1 +1,19 @@
+# node modules and package manager files
 node_modules/
+
+# https://yarnpkg.com/getting-started/qa#which-files-should-be-gitignored
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# lock files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# build output
+dist/
