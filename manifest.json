@@ -1,5 +1,5 @@
 {
-	"$schema": "manifest_schema.json",
+	"$schema": "https://ghfast.top/https://raw.githubusercontent.com/LiteLoaderQQNT/LiteLoaderQQNT/refs/heads/main/manifest-zh.schema.json",
 	"manifest_version": 4,
 	"type": "extension",
 	"name": "TypeScript插件模板",
